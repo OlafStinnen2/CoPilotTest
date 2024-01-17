@@ -3,9 +3,7 @@
 name: Call another workflow
 
 on:
-  push:
-    branches:
-      - master
+ worflow: dispatch
 
 jobs:
 
