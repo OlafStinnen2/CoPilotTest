@@ -3,7 +3,7 @@
 name: Call another workflow
 
 on:
- worflow: dispatch
+ worflow_dispatch:
 
 jobs:
 
