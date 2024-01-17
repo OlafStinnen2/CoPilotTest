@@ -13,7 +13,7 @@ jobs:
       - name: Call another workflow
         uses: actions/checkout@v2
       - name: Call another workflow
-        uses: ./.github/workflows/githubactions.yml
+        uses: ./.github/workflows/calledwfl.yml
         with:
           myInput: "Hello World"
 
