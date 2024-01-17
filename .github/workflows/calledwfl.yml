@@ -1,9 +1,12 @@
 name: Called workflow
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+      myInput:
+        description: 'My input'
+        required: true
+        default: 'default value'
 
 jobs:
   calledwfl:
