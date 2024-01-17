@@ -1,0 +1,32 @@
+# define a workflow to call another workflow with the name calledwfl.yml as a reusable workflow
+
+name: Call another workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  callwfl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call another workflow
+        uses: actions/checkout@v2
+      - name: Call another workflow
+        uses: ./.github/workflows/calledwfl.yml
+        with:
+          myInput: "Hello World"
+```
+
+
+
+
+
+
+
+
+
+
+
