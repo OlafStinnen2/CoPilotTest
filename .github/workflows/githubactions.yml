@@ -3,7 +3,7 @@
 name: Call another workflow
 
 on:
- worflow_dispatch:
+ workflow_dispatch:
 
 jobs:
 
@@ -16,7 +16,7 @@ jobs:
         uses: ./.github/workflows/githubactions.yml
         with:
           myInput: "Hello World"
-```
+
 
 
 
